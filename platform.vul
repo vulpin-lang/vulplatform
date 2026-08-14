@@ -1,5 +1,4 @@
 Fdetect()
-U"os"
 n=os.name()
 ?n=="nt"
 R"windows"
