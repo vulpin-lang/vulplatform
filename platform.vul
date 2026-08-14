@@ -1,0 +1,16 @@
+Fdetect()
+U"os"
+n=os.name()
+?n=="nt"
+R"windows"
+;
+r=os.system("uname -s > /dev/null 2>&1")
+?r!=0
+R"posix"
+;
+r=os.system("test $(uname -s) = Darwin")
+?r==0
+R"macos"
+;
+R"linux"
+~
