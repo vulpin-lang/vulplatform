@@ -19,3 +19,6 @@ U"platform"
 G"You are not using linux :("
 ;
 ```
+
+Platform detects:
+`windows`, `linux`, `posix`
